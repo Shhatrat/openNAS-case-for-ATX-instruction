@@ -1,98 +1,98 @@
-# openNAS case for ATX: instrukcja montażu
+# openNAS case for ATX: assembly guide
 
-🇬🇧 [English version](README.en.md) · [3D guide in English](https://shhatrat.github.io/openNAS-case-for-ATX-instruction/en/)
+🇵🇱 [Wersja polska](README.pl.md) · [instrukcja 3D po polsku](https://shhatrat.github.io/openNAS-case-for-ATX-instruction/pl/)
 
-Instrukcja montażu w stylu LEGO do drukowanej w 3D, otwartej obudowy NAS na płytę ATX.
+A LEGO-style assembly guide for a 3D-printed open-frame NAS case for ATX motherboards.
 
-- **Interaktywna instrukcja 3D:** https://shhatrat.github.io/openNAS-case-for-ATX-instruction/
-- **PDF do druku:** [instrukcja.pdf](instrukcja.pdf) ([wersja online](https://shhatrat.github.io/openNAS-case-for-ATX-instruction/instrukcja.pdf))
-- **Oryginalny projekt (Printables):** https://www.printables.com/model/1437256-open-nas-case-for-atx
+- **Interactive 3D guide:** https://shhatrat.github.io/openNAS-case-for-ATX-instruction/
+- **Printable PDF:** [instruction.pdf](instruction.pdf) ([online](https://shhatrat.github.io/openNAS-case-for-ATX-instruction/instruction.pdf))
+- **Original design (Printables):** https://www.printables.com/model/1437256-open-nas-case-for-atx
 
-> Projekt obudowy przygotował **Oskari Nykänen** i opublikował na licencji
+> The case was designed by **Oskari Nykänen** and published under
 > [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/).
-> Autor nie dołączył instrukcji montażu. To repozytorium ją uzupełnia.
+> The author did not include assembly instructions. This repository adds them.
 
-## Co to jest
+## What it is
 
-Rama jest otwarta i ma ok. **330 × 235 × 162 mm**. Mieści:
+An open frame, about **330 × 235 × 162 mm**, that holds:
 
-- płytę główną ATX, micro-ATX lub mini-ITX (nie E-ATX), która leży płasko na górze,
-- zasilacz ATX, który stoi po lewej, gniazdem do przodu,
-- **8 dysków 3,5″** po prawej, w dwóch klatkach (4 dyski z przodu i 4 z tyłu), z szynami TPU tłumiącymi drgania,
-- 1–2 wentylatory 140 mm (przód, opcjonalnie też tył),
-- opcjonalnie 2 diody LED 3 mm (power i HDD).
+- an ATX, micro-ATX or mini-ITX motherboard (not E-ATX), lying flat on top,
+- an ATX power supply on the left, power socket facing the front,
+- **8 × 3.5″ drives** on the right, in two cages (4 front, 4 rear), with vibration-damping TPU rails,
+- 1–2 × 140 mm fans (front, optionally rear),
+- optionally two 3 mm LEDs (power and HDD).
 
-## Instrukcja 3D
+## The 3D guide
 
-Strona pokazuje prawdziwe modele z plików STL. Każdy krok ma animację montażu, ramkę „potrzebne części” z miniaturami i listę śrub. Miejsca na wkładki gwintowane są zaznaczone na złoto. Model można obracać myszką, a klawisze ← → przełączają kroki. Konkretny krok otworzysz linkiem, np. [`#krok-7`](https://shhatrat.github.io/openNAS-case-for-ATX-instruction/#krok-7).
+The page shows the real models from the STL files. Every step has an assembly animation, a "needed in this step" box with thumbnails, and a list of screws. Heat-set insert locations are marked in gold. Drag to rotate the model and use the ← → keys to change steps. Link to a step directly, e.g. [`#step-7`](https://shhatrat.github.io/openNAS-case-for-ATX-instruction/#step-7).
 
-### Kroki
+### Steps
 
-1. **Lewa ściana**: `foot-left` stoi pionowo, a wkładki są w górnej krawędzi.
-2. **Wsporniki zasilacza**: `psu-support` leży na dolnej belce, a `psu-bracket` stoi za przednią belką.
-3. **Ściana środkowa**: `foot-right` łapie drugie końce wsporników. Wkręcasz 2 śruby od przodu i 4 od spodu.
-4. **Zasilacz**: opuszczasz go od góry i przykręcasz 4 śrubami 6-32 przez ramkę.
-5. **Klatki dysków**: 2× `hdd-rack`, równolegle do ścian.
-6. **Płyta pod płytę główną**: dwie połówki łączysz na zakładkę i przykręcasz 8× M3 do czterech ścian.
-7. **Dyski z szynami**: szyna TPU idzie na bok dysku zwrócony do środka. Dyski wsuwasz z prawej strony przez obie klatki.
-8. **Przykręcenie dysków**: 2 śruby na dysk przez zewnętrzne belki klatek.
-9. **Tylna belka**: `rear-brace-long`.
-10. **Uchwyty wentylatora**: `front-brace-with-fanmount` i `fanmount-top`.
-11. **Wentylator 140 mm**: z podkładkami TPU.
-12. **Płyta główna**: 7 śrub M3 do słupków.
-13. **LED i nóżki.**
+1. **Left wall**: `foot-left` stands upright, with the inserts in its top edge.
+2. **PSU supports**: `psu-support` lies on the lower bar, and `psu-bracket` stands behind the front bar.
+3. **Middle wall**: `foot-right` catches the other ends of the supports. Drive 2 screws from the front and 4 from below.
+4. **Power supply**: lower it in from above and fix it with 4 × 6-32 screws through the frame.
+5. **Drive cages**: 2 × `hdd-rack`, parallel to the walls.
+6. **Motherboard plate**: join the two halves with the lap joint and screw it to the four walls with 8 × M3.
+7. **Drives with rails**: the TPU rail goes on the side of the drive that faces the middle. Slide the drives in from the right through both cages.
+8. **Screw in the drives**: 2 screws per drive through the outer bars of the cages.
+9. **Rear brace**: `rear-brace-long`.
+10. **Fan mounts**: `front-brace-with-fanmount` and `fanmount-top`.
+11. **140 mm fan**: with TPU washers.
+12. **Motherboard**: 7 × M3 screws into the standoffs.
+13. **LEDs and feet.**
 
-> Dyski przykręć **przed** belkami i wentylatorem. Później zasłaniają one śruby najniższego dysku. Autor też o tym wspomina.
+> Screw in the drives **before** fitting the braces and the fan. They cover the screws of the lowest drive afterwards. The author mentions this too.
 
-## Części do wydruku
+## Printed parts
 
-Pliki leżą w katalogu [`stl/`](stl). Są już ułożone do druku i nie wymagają podpór.
+The files are in [`stl/`](stl). They are already oriented for printing and need no supports.
 
-| Plik | Szt. | Materiał | Do czego |
+| File | Qty | Material | Purpose |
 |---|---|---|---|
-| `foot-left.stl` | 1 | ABS | Lewa ściana zatoki zasilacza |
-| `foot-right.stl` | 1 | ABS | Ściana środkowa, otwory na LED |
-| `hdd-rack.stl` | **2** | ABS | Klatki dysków, razem 8 dysków 3,5″ |
-| `mb-mount-left.stl` + `mb-mount-right.stl` | 1+1 | ABS | Płyta pod płytę główną |
-| `psu-bracket.stl` | 1 | ABS | Ramka zasilacza (rozstaw ATX) |
-| `psu-support.stl` | 1 | ABS | Belka pod zasilacz |
-| `rear-brace-long.stl` | 1 | ABS | Tylna belka, 330 mm (stół > 240 mm) |
-| `front-brace-with-fanmount.stl` | 1 | ABS | Przednia belka i dolny uchwyt wentylatora |
-| `fanmount-top.stl` | 1 | ABS | Górny uchwyt wentylatora |
-| `hdd-rail.stl` | 8 | TPU | Szyny dysków |
-| `washer.stl` | 4 | TPU | Podkładki pod wentylator |
+| `foot-left.stl` | 1 | ABS | Left wall of the PSU bay |
+| `foot-right.stl` | 1 | ABS | Middle wall, LED holes |
+| `hdd-rack.stl` | **2** | ABS | Drive cages, 8 × 3.5″ drives in total |
+| `mb-mount-left.stl` + `mb-mount-right.stl` | 1+1 | ABS | Motherboard plate |
+| `psu-bracket.stl` | 1 | ABS | PSU frame (ATX pattern) |
+| `psu-support.stl` | 1 | ABS | Bar under the PSU |
+| `rear-brace-long.stl` | 1 | ABS | Rear brace, 330 mm (bed > 240 mm) |
+| `front-brace-with-fanmount.stl` | 1 | ABS | Front brace and lower fan mount |
+| `fanmount-top.stl` | 1 | ABS | Upper fan mount |
+| `hdd-rail.stl` | 8 | TPU | Drive rails |
+| `washer.stl` | 4 | TPU | Fan washers |
 
-**Warianty:** `rear-brace-long-with-fanmount` (340 mm) lub `rear-brace-medium-with-fanmount` z drugą sztuką `fanmount-top` dają tylny wentylator. `rear-brace-medium` i `rear-brace-short` to krótsze belki na mniejsze drukarki. `fanmount-bottom` to sam dolny uchwyt wentylatora.
+**Variants:** `rear-brace-long-with-fanmount` (340 mm) or `rear-brace-medium-with-fanmount` with a second `fanmount-top` give you a rear fan. `rear-brace-medium` and `rear-brace-short` are shorter braces for smaller printers. `fanmount-bottom` is the lower fan mount on its own.
 
-## Elementy kupne
+## Hardware to buy
 
-| Element | Szt. |
+| Item | Qty |
 |---|---|
-| Wkładki gwintowane M3 (otwór Ø4) | ≈30 |
-| Śruby M3 imbusowe 8–10 mm | 23 |
-| Śruby M3 × 6 mm (płyta główna) | 7 |
-| Wkładki M4 + śruby M4 × ~30 mm (wentylator) | 4 + 4 |
-| Śruby do dysków 6-32 UNC | 40 |
-| Śruby zasilacza 6-32 UNC | 4 |
-| Wentylator 140 mm | 1–2 |
-| LED 3 mm (opcjonalnie) | 2 |
-| Gumowe nóżki | 8 |
+| M3 heat-set inserts (Ø4 hole) | ≈30 |
+| M3 socket head screws, 8–10 mm | 23 |
+| M3 × 6 mm screws (motherboard) | 7 |
+| M4 inserts + M4 × ~30 mm screws (fan) | 4 + 4 |
+| Drive screws 6-32 UNC | 40 |
+| PSU screws 6-32 UNC | 4 |
+| 140 mm fan | 1–2 |
+| 3 mm LED (optional) | 2 |
+| Rubber feet | 8 |
 
-## Skąd ta instrukcja
+## Where this guide comes from
 
-Ułożenie części odtworzyłem z geometrii plików STL. Rozstawy otworów pasują między częściami co do milimetra:
+I reconstructed the layout from the geometry of the STL files. Hole spacings match between parts to the millimetre:
 
-- otwory płyty i górnych krawędzi ścian: 31,5 i 205,5 mm,
-- ramka zasilacza: standard ATX (114 / 138 / 64,5 mm),
-- szyny: boczne otwory dysku 3,5″ (60 / 41,6 mm),
-- uchwyty wentylatora: 125 mm.
+- plate holes and wall top edges: 31.5 and 205.5 mm,
+- PSU frame: the ATX standard (114 / 138 / 64.5 mm),
+- rails: 3.5″ drive side holes (60 / 41.6 mm),
+- fan mounts: 125 mm.
 
-Mniej pewne są dwie rzeczy:
+Two things are less certain:
 
-- **Liczba `hdd-rack` (2 szt.)** wynika z czterech rzędów otworów w płycie i w długiej belce.
-- **Kolejność kroków** to moja propozycja, a nie oryginał autora.
+- **The number of `hdd-rack` parts (2)** follows from the four rows of holes in the plate and in the long brace.
+- **The order of the steps** is my suggestion, not the author's.
 
-## Licencja
+## License
 
-Pliki STL i projekt obudowy przygotował Oskari Nykänen ([Printables](https://www.printables.com/model/1437256-open-nas-case-for-atx)) i opublikował na licencji
-[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Instrukcja jest utworem zależnym i ma tę samą licencję. Szczegóły są w [LICENSE.md](LICENSE.md).
+The STL files and the case design are by Oskari Nykänen ([Printables](https://www.printables.com/model/1437256-open-nas-case-for-atx)), published under
+[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). This guide is a derivative work under the same license. See [LICENSE.md](LICENSE.md).

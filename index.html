@@ -1,10 +1,10 @@
 <!doctype html>
-<html lang="pl">
+<html lang="en">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <style>body{margin:0;font:14px system-ui}img{max-width:100%}</style>
-<title>Open NAS ATX – montaż</title>
+<title>Open NAS ATX – assembly</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;700;900&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@500&display=swap">
 <style>
@@ -115,89 +115,89 @@ td code{white-space:nowrap}
 <body>
 <div class="app">
 <header>
-  <h1>Open NAS <span>ATX</span> · instrukcja montażu</h1>
+  <h1>Open NAS <span>ATX</span> · assembly guide</h1>
   <div class="links">
-    <a href="https://www.printables.com/model/1437256-open-nas-case-for-atx" target="_blank" rel="noopener">Projekt na Printables ↗</a>
-    <a href="https://shhatrat.github.io/openNAS-case-for-ATX-instruction/instrukcja.pdf" target="_blank" rel="noopener">PDF ↗</a>
+    <a href="https://www.printables.com/model/1437256-open-nas-case-for-atx" target="_blank" rel="noopener">Project on Printables ↗</a>
+    <a href="https://shhatrat.github.io/openNAS-case-for-ATX-instruction/instruction.pdf" target="_blank" rel="noopener">PDF ↗</a>
     <a href="https://github.com/Shhatrat/openNAS-case-for-ATX-instruction" target="_blank" rel="noopener">GitHub ↗</a>
-    <a href="https://shhatrat.github.io/openNAS-case-for-ATX-instruction/en/">English</a>
+    <a href="https://shhatrat.github.io/openNAS-case-for-ATX-instruction/pl/">Polski</a>
   </div>
   <div class="tabs" role="tablist">
-    <button id="tab-steps" role="tab" aria-selected="true">Montaż</button>
-    <button id="tab-bom" role="tab" aria-selected="false">Części i druk</button>
+    <button id="tab-steps" role="tab" aria-selected="true">Assembly</button>
+    <button id="tab-bom" role="tab" aria-selected="false">Parts &amp; printing</button>
   </div>
 </header>
 <main id="steps-view">
   <div class="stage">
     <div id="view"></div>
-    <div class="loading" id="loading">Ładowanie modeli…</div>
+    <div class="loading" id="loading">Loading models…</div>
     <div class="bignum" id="bignum"></div>
-    <div class="hint">przeciągnij: obrót · kółko/pinch: zoom · ← → kroki</div>
+    <div class="hint">drag: rotate · wheel/pinch: zoom · ← → steps</div>
   </div>
   <aside>
     <div class="card">
       <h2 id="title"></h2>
-      <div class="callout" id="callout"><h3>Potrzebne w tym kroku</h3><div class="grid" id="parts"></div></div>
+      <div class="callout" id="callout"><h3>Needed in this step</h3><div class="grid" id="parts"></div></div>
       <div class="text" id="text"></div>
       <div class="hw" id="hw"></div>
     </div>
     <nav class="steps">
       <div class="dots" id="dots"></div>
       <div class="btns">
-        <button id="prev">← Wstecz</button>
-        <button id="replay" title="Powtórz animację">↻</button>
-        <button id="next" class="primary">Dalej →</button>
+        <button id="prev">← Back</button>
+        <button id="replay" title="Replay animation">↻</button>
+        <button id="next" class="primary">Next →</button>
       </div>
     </nav>
   </aside>
 </main>
 <main id="bom" hidden>
  <div class="wrap">
-  <h2>Części do wydruku</h2>
-  <p>Wszystkie pliki są już ułożone do druku i nie wymagają podpór; oczyść ewentualnie otwory. Konstrukcja z ABS (lub PLA przy dobrej wentylacji), szyny i podkładki z TPU. Wszystko poza najdłuższymi belkami mieści się na stole 240×240 mm.</p>
+  <h2>Printed parts</h2>
+  <p>All files are already oriented for printing and need no supports; you may have to clean up some holes. Print the frame in ABS (or PLA with good ventilation), and the rails and washers in TPU. Everything except the longest braces fits a 240×240 mm bed.</p>
   <div class="tbl"><table>
-   <thead><tr><th>Plik</th><th>Szt.</th><th>Materiał</th><th>Do czego</th></tr></thead>
+   <thead><tr><th>File</th><th>Qty</th><th>Material</th><th>Purpose</th></tr></thead>
    <tbody>
-    <tr><td><code>foot-left.stl</code></td><td class="n">1</td><td>ABS</td><td>Lewa ściana zatoki zasilacza</td></tr>
-    <tr><td><code>foot-right.stl</code></td><td class="n">1</td><td>ABS</td><td>Ściana środkowa (z otworami na 2 diody LED 3 mm)</td></tr>
-    <tr><td><code>hdd-rack.stl</code></td><td class="n">2</td><td>ABS</td><td>Klatki na dyski. Dwie sztuki trzymają razem 8 dysków 3,5″ (4 z przodu, 4 z tyłu)</td></tr>
-    <tr><td><code>mb-mount-left.stl</code> + <code>mb-mount-right.stl</code></td><td class="n">1+1</td><td>ABS</td><td>Płyta pod płytę główną ATX, łączona na zakładkę</td></tr>
-    <tr><td><code>psu-bracket.stl</code></td><td class="n">1</td><td>ABS</td><td>Ramka z otworami standardu ATX, do której przykręca się zasilacz</td></tr>
-    <tr><td><code>psu-support.stl</code></td><td class="n">1</td><td>ABS</td><td>Belka, na której leży zasilacz</td></tr>
-    <tr><td><code>rear-brace-long.stl</code></td><td class="n">1</td><td>ABS</td><td>Dolna tylna belka, 330 mm. Potrzebny stół co najmniej 330 mm; zamiennik to <code>rear-brace-medium</code> (228 mm) + <code>rear-brace-short</code></td></tr>
-    <tr><td><code>front-brace-with-fanmount.stl</code></td><td class="n">1</td><td>ABS</td><td>Dolna przednia belka i jednocześnie dolny uchwyt wentylatora</td></tr>
-    <tr><td><code>fanmount-top.stl</code></td><td class="n">1</td><td>ABS</td><td>Górny uchwyt wentylatora 140 mm</td></tr>
-    <tr><td><code>hdd-rail.stl</code></td><td class="n">8</td><td>TPU</td><td>Szyna tłumiąca drgania, po jednej na dysk</td></tr>
-    <tr><td><code>washer.stl</code></td><td class="n">4</td><td>TPU</td><td>Podkładki pod wentylator</td></tr>
+    <tr><td><code>foot-left.stl</code></td><td class="n">1</td><td>ABS</td><td>Left wall of the PSU bay</td></tr>
+    <tr><td><code>foot-right.stl</code></td><td class="n">1</td><td>ABS</td><td>Middle wall (with holes for two 3 mm LEDs)</td></tr>
+    <tr><td><code>hdd-rack.stl</code></td><td class="n">2</td><td>ABS</td><td>Drive cages. Together the two hold 8 × 3.5″ drives (4 front, 4 rear)</td></tr>
+    <tr><td><code>mb-mount-left.stl</code> + <code>mb-mount-right.stl</code></td><td class="n">1+1</td><td>ABS</td><td>Motherboard plate, joined with a lap joint</td></tr>
+    <tr><td><code>psu-bracket.stl</code></td><td class="n">1</td><td>ABS</td><td>Frame with the ATX hole pattern that the PSU screws to</td></tr>
+    <tr><td><code>psu-support.stl</code></td><td class="n">1</td><td>ABS</td><td>Bar the PSU rests on</td></tr>
+    <tr><td><code>rear-brace-long.stl</code></td><td class="n">1</td><td>ABS</td><td>Lower rear brace, 330 mm. Needs a bed of at least 330 mm; alternative: <code>rear-brace-medium</code> (228 mm) + <code>rear-brace-short</code></td></tr>
+    <tr><td><code>front-brace-with-fanmount.stl</code></td><td class="n">1</td><td>ABS</td><td>Lower front brace that also serves as the lower fan mount</td></tr>
+    <tr><td><code>fanmount-top.stl</code></td><td class="n">1</td><td>ABS</td><td>Upper mount for the 140 mm fan</td></tr>
+    <tr><td><code>hdd-rail.stl</code></td><td class="n">8</td><td>TPU</td><td>Vibration-damping rail, one per drive</td></tr>
+    <tr><td><code>washer.stl</code></td><td class="n">4</td><td>TPU</td><td>Fan washers</td></tr>
    </tbody>
   </table></div>
-  <h3>Warianty (opcjonalne)</h3>
+  <h3>Variants (optional)</h3>
   <div class="tbl"><table>
-   <thead><tr><th>Plik</th><th>Kiedy użyć</th></tr></thead>
+   <thead><tr><th>File</th><th>When to use</th></tr></thead>
    <tbody>
-    <tr><td><code>rear-brace-long-with-fanmount.stl</code> (340 mm)</td><td>Drugi wentylator 140 mm z tyłu. Zastępuje <code>rear-brace-long</code>; do tego druga sztuka <code>fanmount-top</code></td></tr>
-    <tr><td><code>rear-brace-medium-with-fanmount.stl</code></td><td>Tylny wentylator bez długiej belki, łączy ścianę środkową z obiema klatkami</td></tr>
-    <tr><td><code>rear-brace-medium.stl</code> / <code>rear-brace-short.stl</code></td><td>Krótsze tylne belki, gdy 330 mm nie mieści się na stole drukarki</td></tr>
-    <tr><td><code>fanmount-bottom.stl</code></td><td>Sam dolny uchwyt wentylatora, bez belki</td></tr>
+    <tr><td><code>rear-brace-long-with-fanmount.stl</code> (340 mm)</td><td>Second 140 mm fan at the rear. Replaces <code>rear-brace-long</code>; add a second <code>fanmount-top</code></td></tr>
+    <tr><td><code>rear-brace-medium-with-fanmount.stl</code></td><td>Rear fan without the long brace; connects the middle wall to both cages</td></tr>
+    <tr><td><code>rear-brace-medium.stl</code> / <code>rear-brace-short.stl</code></td><td>Shorter rear braces when 330 mm does not fit your print bed</td></tr>
+    <tr><td><code>fanmount-bottom.stl</code></td><td>Lower fan mount on its own, without a brace</td></tr>
    </tbody>
   </table></div>
-  <h3>Elementy kupne</h3>
+  <h3>Hardware to buy</h3>
   <div class="tbl"><table>
-   <thead><tr><th>Element</th><th>Szt.</th><th>Gdzie</th></tr></thead>
+   <thead><tr><th>Item</th><th>Qty</th><th>Where</th></tr></thead>
    <tbody>
-    <tr><td>Wkładki gwintowane M3 (wtapiane, otwór Ø4)</td><td class="n">≈30</td><td>Górne krawędzie ścian i klatek, tył/przód przy dole, ramka i belka PSU, 7 słupków pod płytę główną</td></tr>
-    <tr><td>Śruby M3 imbusowe, 8–10 mm</td><td class="n">23</td><td>Łączenie części drukowanych</td></tr>
-    <tr><td>Śruby M3 × 6 mm</td><td class="n">7</td><td>Płyta główna do słupków</td></tr>
-    <tr><td>Wkładki M4 + śruby M4 × ~30 mm</td><td class="n">4+4</td><td>Wentylator (otwory Ø5 w uchwytach). Autor poleca M4, ale można użyć zwykłych śrub do wentylatora</td></tr>
-    <tr><td>Śruby do dysków 6-32 UNC</td><td class="n">40</td><td>24 do szyn (3 na dysk) i 16 przez klatki (2 na dysk)</td></tr>
-    <tr><td>Śruby zasilacza 6-32 UNC</td><td class="n">4</td><td>Zasilacz do <code>psu-bracket</code></td></tr>
-    <tr><td>Wentylator 140 mm</td><td class="n">1–2</td><td>Przód zatoki dysków (opcjonalnie też tył)</td></tr>
-    <tr><td>Dioda LED 3 mm</td><td class="n">2</td><td>Power i HDD, opcjonalnie</td></tr>
-    <tr><td>Gumowe nóżki</td><td class="n">8</td><td>Pod ściany (zamiast drukowanych)</td></tr>
+    <tr><td>M3 heat-set inserts (Ø4 hole)</td><td class="n">≈30</td><td>Top edges of the walls and cages, front/rear near the bottom, PSU frame and bar, 7 motherboard standoffs</td></tr>
+    <tr><td>M3 socket head screws, 8–10 mm</td><td class="n">23</td><td>Joining the printed parts</td></tr>
+    <tr><td>M3 × 6 mm screws</td><td class="n">7</td><td>Motherboard to standoffs</td></tr>
+    <tr><td>M4 inserts + M4 × ~30 mm screws</td><td class="n">4+4</td><td>Fan (Ø5 holes in the mounts). The author recommends M4, but regular fan screws also work</td></tr>
+    <tr><td>Drive screws 6-32 UNC</td><td class="n">40</td><td>24 for the rails (3 per drive) and 16 through the cages (2 per drive)</td></tr>
+    <tr><td>PSU screws 6-32 UNC</td><td class="n">4</td><td>PSU to <code>psu-bracket</code></td></tr>
+    <tr><td>140 mm fan</td><td class="n">1–2</td><td>Front of the drive bay (optionally also the rear)</td></tr>
+    <tr><td>3 mm LED</td><td class="n">2</td><td>Power and HDD, optional</td></tr>
+    <tr><td>Rubber feet</td><td class="n">8</td><td>Under the walls (instead of printed feet)</td></tr>
    </tbody>
   </table></div>
-  <h3>Skąd ta instrukcja</h3>
-  <p>Autor (Oskari Nykänen, licencja CC BY-NC-SA 4.0) nie opublikował instrukcji montażu. Ułożenie części odtworzyłem z geometrii plików STL: rozstawy otworów pasują między częściami co do milimetra (np. otwory płyty 31,5/205,5 mm, rozstaw zasilacza ATX 114/138/64,5 mm, boczne otwory dysku 3,5″ 60/41,6 mm). Zgadza się to też z opisem autora: aby dostać się do śrub dysków, trzeba zdjąć wentylator, a przy najniższym dysku także uchwyt. Dwie rzeczy są mniej pewne. Liczba <code>hdd-rack</code> (2 szt.) wynika z czterech rzędów otworów w płycie i w długiej belce. Kolejność kroków jest moją propozycją.</p>
+  <h3>Where this guide comes from</h3>
+  <p>The author (Oskari Nykänen, CC BY-NC-SA 4.0 license) did not publish assembly instructions. I reconstructed the layout from the geometry of the STL files: hole spacings match between parts to the millimetre (e.g. plate holes at 31.5/205.5 mm, the ATX PSU pattern 114/138/64.5 mm, the 3.5″ drive side holes 60/41.6 mm). This also agrees with the author's note that you have to remove the fan to reach the drive screws, and the fan mount too for the lowest drive. Two things are less certain. The number of <code>hdd-rack</code> parts (2) follows from the four rows of holes in the plate and in the long brace. The order of the steps is my suggestion.</p>
  </div>
 </main>
 </div>
@@ -343,83 +343,83 @@ new MutationObserver(applyTheme).observe(document.documentElement,{attributes:tr
 // ---------- steps ----------
 const S=(p,d,o)=>({p,d,o});
 const steps=[
- {title:'Gotowa obudowa', cam:{t:[165,117,85],az:-32,el:24,d:1050}, auto:true,
-  parts:[], text:`<p>Otwarta rama ATX na NAS. Zasilacz stoi po lewej, osiem dysków 3,5″ po prawej w dwóch klatkach, płyta główna leży płasko na górze, a wentylator 140 mm chłodzi dyski od przodu.</p><p>Rama ma ok. <b>330 × 235 × 162 mm</b>. Mieści płyty ATX, micro-ATX i mini-ITX (nie E-ATX) oraz zasilacze ATX.</p><p>Na zdjęciu autora widać, że obudowa stoi w szafce rack tak jak tutaj: zasilacz, dioda LED i wentylator z przodu.</p><p class="warn">Wkładki gwintowane zaznaczyłem na modelach na złoto. Wtop je, zanim zaczniesz skręcać.</p>`, hw:[]},
- {title:'Lewa ściana', cam:{t:[30,117,74],az:-40,el:22,d:620},
+ {title:'Finished case', cam:{t:[165,117,85],az:-32,el:24,d:1050}, auto:true,
+  parts:[], text:`<p>An open ATX frame for a NAS. The power supply sits on the left, eight 3.5″ drives sit on the right in two cages, the motherboard lies flat on top, and a 140 mm fan cools the drives from the front.</p><p>The frame is about <b>330 × 235 × 162 mm</b>. It fits ATX, micro-ATX and mini-ITX boards (not E-ATX) and ATX power supplies.</p><p>The author's photo shows the case in a rack cabinet set up like this: PSU, LED and fan at the front.</p><p class="warn">Heat-set inserts are marked in gold on the models. Melt them in before you start screwing parts together.</p>`, hw:[]},
+ {title:'Left wall', cam:{t:[30,117,74],az:-40,el:22,d:620},
   items:[{o:()=>stl('foot-left',RX,[0,0,148],COL.wall,INS['foot-left']),f:[0,0,160]}],
-  parts:[['foot-left',1,'foot-left'],['ins',3,'wkładka M3']],
-  text:`<p>Postaw <code>foot-left</code> pionowo, długim bokiem (235 mm) w głąb obudowy.</p><p>U góry muszą być otwory <b>bez pogłębień</b>, bo tam trafią wkładki pod płytę. Pogłębione otwory (Ø6) mają być na dole i z przodu, bo przez nie wkręcisz śruby.</p>`,
-  hw:['2 wkładki M3 w górnej krawędzi','1 wkładka M3 z tyłu przy dole (pod tylną belkę)']},
- {title:'Wsporniki zasilacza', cam:{t:[90,70,55],az:-38,el:26,d:620},
+  parts:[['foot-left',1,'foot-left'],['ins',3,'M3 insert']],
+  text:`<p>Stand <code>foot-left</code> upright, with its long side (235 mm) running front to back.</p><p>The holes <b>without counterbores</b> go on top, because the inserts for the plate go there. The counterbored holes (Ø6) go at the bottom and the front, because you drive screws through them.</p>`,
+  hw:["2 M3 inserts in the top edge", "1 M3 insert at the rear near the bottom (for the rear brace)"]},
+ {title:'PSU supports', cam:{t:[90,70,55],az:-38,el:26,d:620},
   items:[{o:()=>stl('psu-support',I3,[0.5,120.5,6],COL.psu,INS['psu-support']),f:[-230,0,0]},
          {o:()=>stl('psu-bracket',[[1,0,0],[0,0,1],[0,-1,0]],[10.25,6,106],COL.psu,INS['psu-bracket']),f:[-230,0,0]}],
-  parts:[['psu-support',1,'psu-support'],['psu-bracket',1,'psu-bracket'],['ins',6,'wkładka M3']],
-  text:`<p><code>psu-support</code> kładziesz na dolnej belce ścian, ok. 12 cm od przodu. To na nim leży zasilacz.</p><p><code>psu-bracket</code> stawiasz tuż <b>za przednią belką</b> ściany. Ma rozstaw otworów ATX (114 / 138 / 64,5 mm).</p><p>Końce obu części wsuń w okno lewej ściany.</p>`,
-  hw:['2 wkładki M3 w psu-support (od spodu)','4 wkładki M3 w psu-bracket: 2 z przodu i 2 w dolnej krawędzi']},
- {title:'Ściana środkowa', cam:{t:[95,90,40],az:-30,el:-18,d:700},
+  parts:[['psu-support',1,'psu-support'],['psu-bracket',1,'psu-bracket'],['ins',6,'M3 insert']],
+  text:`<p><code>psu-support</code> lies on the lower bar of the walls, about 12 cm from the front. The power supply rests on it.</p><p><code>psu-bracket</code> stands just <b>behind the front bar</b> of the wall. It has the ATX hole pattern (114 / 138 / 64.5 mm).</p><p>Slide the ends of both parts into the window of the left wall.</p>`,
+  hw:["2 M3 inserts in psu-support (from below)", "4 M3 inserts in psu-bracket: 2 at the front and 2 in the bottom edge"]},
+ {title:'Middle wall', cam:{t:[95,90,40],az:-30,el:-18,d:700},
   items:[{o:()=>stl('foot-right',[[0,0,-1],[0,1,0],[1,0,0]],[190.5,0,0],COL.wall,INS['foot-right']),f:[170,0,0]}],
   screws:[S([15,0,100],[0,1,0]),S([175.5,0,100.5],[0,1,0]),S([15,10.5,0],[0,0,1]),S([175.5,10.5,0],[0,0,1]),S([10.5,130.5,0],[0,0,1]),S([180,130.5,0],[0,0,1])],
-  parts:[['foot-right',1,'foot-right'],['ins',4,'wkładka M3'],['m3',6,'M3 × 8']],
-  text:`<p>Załóż <code>foot-right</code> na drugie końce wsporników. Otwory na LED mają być z przodu u góry.</p><p>Przykręć <b>2 śruby od przodu</b> (na wys. ok. 10 cm) do ramki zasilacza i <b>4 śruby od spodu</b>: 2 do ramki i 2 do belki. Najwygodniej robić to z ramą położoną na boku.</p>`,
-  hw:['6× M3 × 8–10 mm']},
- {title:'Zasilacz', cam:{t:[95,80,50],az:-25,el:30,d:620},
+  parts:[['foot-right',1,'foot-right'],['ins',4,'M3 insert'],['m3',6,'M3 × 8']],
+  text:`<p>Fit <code>foot-right</code> onto the other ends of the supports. The LED holes go at the front, near the top.</p><p>Drive <b>2 screws from the front</b> (about 10 cm up) into the PSU frame and <b>4 screws from below</b>: 2 into the frame and 2 into the bar. This is easiest with the frame lying on its side.</p>`,
+  hw:["6× M3 × 8–10 mm"]},
+ {title:'Power supply', cam:{t:[95,80,50],az:-25,el:30,d:620},
   items:[{o:psu,f:[0,0,230]}],
   screws:[S([26.75,6,92.5],[0,1,0],{len:6}),S([26.75,6,28],[0,1,0],{len:6}),S([140.75,6,17.5],[0,1,0],{len:6}),S([164.75,6,92.5],[0,1,0],{len:6})],
-  parts:[['psu',1,'zasilacz ATX'],['hdd',4,'6-32 UNC']],
-  text:`<p>Opuść zasilacz od góry na <code>psu-support</code>. <b>Gniazdo zasilania ma być z przodu</b>, przy ramce.</p><p>Przykręć go 4 standardowymi śrubami przez ramkę.</p><p>Nad zasilaczem zostaje ok. 5 cm. Autor pisze, że zmieściłyby się tam jeszcze 2 dyski, ale pogorszyłoby to przepływ powietrza.</p>`,
-  hw:['4× śruba zasilacza 6-32 UNC']},
- {title:'Klatki dysków', cam:{t:[230,117,74],az:-38,el:26,d:820},
+  parts:[['psu',1,'ATX PSU'],['hdd',4,'6-32 UNC']],
+  text:`<p>Lower the power supply from above onto <code>psu-support</code>. <b>The power socket faces the front</b>, against the frame.</p><p>Fix it with the 4 standard screws through the frame.</p><p>About 5 cm of space remains above the PSU. The author notes that 2 more drives would fit there, but airflow would suffer.</p>`,
+  hw:["4× PSU screw 6-32 UNC"]},
+ {title:'Drive cages', cam:{t:[230,117,74],az:-38,el:26,d:820},
   items:[{o:()=>stl('hdd-rack',RX,[208.5,0,148],COL.rack,INS['hdd-rack']),f:[0,0,230]},{o:()=>stl('hdd-rack',RX,[309.5,0,148],COL.rack,INS['hdd-rack']),f:[0,0,230]}],
-  parts:[['hdd-rack',2,'hdd-rack'],['ins',12,'wkładka M3']],
-  text:`<p>Wydrukuj <b>dwie</b> sztuki <code>hdd-rack</code> i ustaw je równolegle do ścian: pierwszą 18 mm za ścianą środkową, drugą 81 mm dalej, na prawej krawędzi.</p><p>Na razie stoją luzem. Dokładny rozstaw wyznaczy płyta w następnym kroku.</p><p>Wcięcia w środkowej belce to gniazda na szyny TPU.</p>`,
-  hw:['Na każdą klatkę 6 wkładek M3: 2 u góry, 2 z przodu i 2 z tyłu']},
- {title:'Płyta pod płytę główną', cam:{t:[165,117,150],az:-30,el:42,d:900},
+  parts:[['hdd-rack',2,'hdd-rack'],['ins',12,'M3 insert']],
+  text:`<p>Print <b>two</b> <code>hdd-rack</code> parts and stand them parallel to the walls: the first 18 mm from the middle wall, the second 81 mm further, at the right edge.</p><p>They stand loose for now. The plate in the next step sets their exact spacing.</p><p>The notches in the middle bar are slots for the TPU rails.</p>`,
+  hw:["6 M3 inserts per cage: 2 on top, 2 at the front and 2 at the rear"]},
+ {title:'Motherboard plate', cam:{t:[165,117,150],az:-30,el:42,d:900},
   items:[{o:()=>stl('mb-mount-left',I3,[0,0,148],COL.mb,INS['mb-mount-left']),f:[-60,0,150]},{o:()=>stl('mb-mount-right',I3,[170,0,148],COL.mb,INS['mb-mount-right']),f:[60,0,190]}],
   screws:[[15,175.5,218,320].flatMap(x=>[S([x,31.5,154],[0,0,-1],{len:10}),S([x,205.5,154],[0,0,-1],{len:10})])].flat(),
-  parts:[['mb-mount-left',1,'mb-mount-left'],['mb-mount-right',1,'mb-mount-right'],['ins',7,'wkładka M3'],['m3',8,'M3 × 10']],
-  text:`<p>Połącz obie połówki na zakładkę: zęby prawej części wchodzą w gniazda lewej. Klejenie nie jest potrzebne, bo całość trzymają śruby.</p><p>Wtop wkładki w 7 słupków. Potem przykręć płytę 8 śrubami (łby chowają się w pogłębieniach) do górnych krawędzi wszystkich czterech ścian.</p>`,
-  hw:['8× M3 × 8–10 mm','Opcjonalnie: w złączu jest kanał Ø3,3 mm na kołek (np. kawałek filamentu 2,85 mm)']},
- {title:'Dyski z szynami', cam:{t:[275,117,74],az:48,el:20,d:860},
+  parts:[['mb-mount-left',1,'mb-mount-left'],['mb-mount-right',1,'mb-mount-right'],['ins',7,'M3 insert'],['m3',8,'M3 × 10']],
+  text:`<p>Join the two halves with the lap joint: the teeth of the right half fit into the slots of the left one. No glue is needed, because the screws hold everything together.</p><p>Melt inserts into the 7 standoffs. Then screw the plate with 8 screws (the heads sit in counterbores) to the top edges of all four walls.</p>`,
+  hw:["8× M3 × 8–10 mm", "Optional: the joint has a Ø3.3 mm channel for a pin (e.g. a piece of 2.85 mm filament)"]},
+ {title:'Drives with rails', cam:{t:[275,117,74],az:48,el:20,d:860},
   items:HOLES.flatMap((h,i)=>[{o:()=>drive(h,false),f:[290,0,0]},{o:()=>drive(h,true),f:[290,0,0]}]),
-  parts:[['drive',8,'dysk 3,5″'],['hdd-rail',8,'hdd-rail (TPU)'],['hdd',24,'6-32 UNC']],
-  text:`<p>Do każdego dysku przykręć szynę <code>hdd-rail</code> trzema śrubami w boczne otwory (rozstaw 60 / 41,6 mm). Szyna idzie na bok zwrócony <b>do środka</b> obudowy, czyli przy przednich dyskach na tylny bok, a przy tylnych na przedni.</p><p>Wsuń dyski z prawej strony przez okna obu klatek, złączami SATA na zewnątrz, aż oprą się o ścianę środkową. Szyna wchodzi w wycięcie środkowej belki.</p>`,
-  hw:['24× śruba 6-32 UNC (3 na dysk)']},
- {title:'Przykręć dyski', cam:{t:[270,117,74],az:-22,el:14,d:760},
+  parts:[['drive',8,'3.5″ drive'],['hdd-rail',8,'hdd-rail (TPU)'],['hdd',24,'6-32 UNC']],
+  text:`<p>Screw an <code>hdd-rail</code> to each drive with three screws into the side holes (spacing 60 / 41.6 mm). The rail goes on the side that faces <b>the middle</b> of the case: the rear side of the front drives and the front side of the rear drives.</p><p>Slide the drives in from the right through the windows of both cages, SATA connectors facing out, until they touch the middle wall. The rail slides into the notch in the middle bar.</p>`,
+  hw:["24× 6-32 UNC screw (3 per drive)"]},
+ {title:'Screw in the drives', cam:{t:[270,117,74],az:-22,el:14,d:760},
   screws:HOLES.flatMap(h=>[S([218.5,0,h],[0,1,0],{len:6}),S([319.5,0,h],[0,1,0],{len:6}),S([218.5,235,h],[0,-1,0],{len:6}),S([319.5,235,h],[0,-1,0],{len:6})]),
   parts:[['hdd',16,'6-32 UNC']],
-  text:`<p>Każdy dysk przykręcasz 2 śrubami przez zewnętrzną belkę obu klatek: przednie dyski od przodu, tylne od tyłu. Łby chowają się w pogłębieniach Ø8.</p><p class="warn">Zrób to <b>przed</b> montażem belek i wentylatora. Później zasłaniają one śruby najniższego dysku.</p>`,
-  hw:['16× śruba 6-32 UNC']},
- {title:'Tylna belka', cam:{t:[165,235,40],az:205,el:20,d:760},
+  text:`<p>Each drive gets 2 screws through the outer bar of both cages: front drives from the front, rear drives from the rear. The heads sit in the Ø8 counterbores.</p><p class="warn">Do this <b>before</b> fitting the braces and the fan. They cover the screws of the lowest drive afterwards.</p>`,
+  hw:["16× 6-32 UNC screw"]},
+ {title:'Rear brace', cam:{t:[165,235,40],az:205,el:20,d:760},
   items:[{o:()=>stl('rear-brace-long',[[1,0,0],[0,0,1],[0,-1,0]],[0,235,20],COL.brace),f:[0,140,0]}],
   screws:[10.5,180,219,319.5].map(x=>S([x,241,8],[0,-1,0])),
   parts:[['rear-brace-long',1,'rear-brace-long'],['m3',4,'M3 × 8']],
-  text:`<p>Przykręć <code>rear-brace-long</code> na dole z tyłu. Łączy wszystkie cztery ściany i usztywnia ramę.</p><p>Jeśli Twoja drukarka nie drukuje 330 mm, użyj <code>rear-brace-medium</code> z <code>rear-brace-short</code>. Na tylny wentylator jest wariant <code>…-with-fanmount</code>.</p>`,
-  hw:['4× M3 × 8–10 mm']},
- {title:'Uchwyty wentylatora', cam:{t:[265,0,74],az:-18,el:14,d:640},
+  text:`<p>Screw <code>rear-brace-long</code> to the bottom rear. It ties all four walls together and stiffens the frame.</p><p>If your printer cannot print 330 mm, use <code>rear-brace-medium</code> with <code>rear-brace-short</code>. For a rear fan there is a <code>…-with-fanmount</code> variant.</p>`,
+  hw:["4× M3 × 8–10 mm"]},
+ {title:'Fan mounts', cam:{t:[265,0,74],az:-18,el:14,d:640},
   items:[{o:()=>stl('front-brace-with-fanmount',[[0,-1,0],[0,0,-1],[1,0,0]],[338.5,0,1],COL.brace,INS['front-brace-with-fanmount']),f:[0,-140,0]},
          {o:()=>stl('fanmount-top',[[0,1,0],[0,0,-1],[-1,0,0]],[200.5,0,146.5],COL.brace,INS['fanmount-top']),f:[0,-140,0]}],
   screws:[S([185.5,-6,12],[0,1,0]),S([218.5,-6,8.5],[0,1,0]),S([320.5,-6,8.5],[0,1,0]),S([218.5,-6,139],[0,1,0]),S([320.5,-6,139],[0,1,0])],
-  parts:[['front-brace-with-fanmount',1,'front-brace-with-fanmount'],['fanmount-top',1,'fanmount-top'],['m4i',4,'wkładka M4'],['m3',5,'M3 × 8']],
-  text:`<p>Na dole z przodu przykręć <code>front-brace-with-fanmount</code> do ściany środkowej i obu klatek (3 śruby). U góry przykręć <code>fanmount-top</code> do klatek (2 śruby).</p><p>W otwory Ø5 na wentylator wtop 4 wkładki M4.</p>`,
-  hw:['5× M3 × 8–10 mm','4 wkładki M4']},
- {title:'Wentylator 140 mm', cam:{t:[265,-10,74],az:-28,el:16,d:680},
+  parts:[['front-brace-with-fanmount',1,'front-brace-with-fanmount'],['fanmount-top',1,'fanmount-top'],['m4i',4,'M4 insert'],['m3',5,'M3 × 8']],
+  text:`<p>At the bottom front, screw <code>front-brace-with-fanmount</code> to the middle wall and both cages (3 screws). At the top, screw <code>fanmount-top</code> to the cages (2 screws).</p><p>Melt 4 M4 inserts into the Ø5 fan holes.</p>`,
+  hw:["5× M3 × 8–10 mm", "4 M4 inserts"]},
+ {title:'140 mm fan', cam:{t:[265,-10,74],az:-28,el:16,d:680},
   items:[{o:fan,f:[0,-170,0]},...fanHoles.map(([x,z])=>({o:()=>wash(x,z),f:[0,-90,0]}))],
   screws:fanHoles.map(([x,z])=>S([x,-33,z],[0,1,0],{len:30,head:3.6,r:2})),
-  parts:[['fan',1,'wentylator 140 mm'],['washer',4,'washer (TPU)'],['m4',4,'M4 × 30']],
-  text:`<p>Między wentylator a uchwyty włóż podkładki TPU, które tłumią drgania. Przykręć wentylator 4 śrubami M4.</p><p>Najlepiej, żeby wdmuchiwał powietrze: wtedy przepływa ono przez 8-milimetrowe szczeliny między dyskami do tyłu obudowy.</p>`,
-  hw:['4× M4 × 30 mm (albo śruby dołączone do wentylatora)']},
- {title:'Płyta główna', cam:{t:[165,117,170],az:-30,el:40,d:900},
+  parts:[['fan',1,'140 mm fan'],['washer',4,'washer (TPU)'],['m4',4,'M4 × 30']],
+  text:`<p>Put the TPU washers between the fan and the mounts to damp vibration. Fix the fan with 4 M4 screws.</p><p>Ideally it should blow in: the air then flows through the 8 mm gaps between the drives to the rear of the case.</p>`,
+  hw:["4× M4 × 30 mm (or the screws supplied with the fan)"]},
+ {title:'Motherboard', cam:{t:[165,117,170],az:-30,el:40,d:900},
   items:[{o:board,f:[0,0,170]}],
   screws:STANDOFFS.map(([x,y])=>S([x,y,163.6],[0,0,-1],{len:6})),
-  parts:[['mb',1,'płyta ATX'],['m3',7,'M3 × 6']],
-  text:`<p>Połóż płytę główną na 7 słupkach (rozstaw ATX) i przykręć ją śrubami M3 do wkładek. Płyty micro-ATX i mini-ITX korzystają z części tych samych otworów.</p><p>Na koniec poprowadź kable: 24-pin i CPU od zasilacza poniżej, SATA po prawej stronie dysków.</p>`,
-  hw:['7× M3 × 6 mm']},
- {title:'LED i nóżki', cam:{t:[165,117,70],az:-24,el:8,d:960},
+  parts:[['mb',1,'ATX motherboard'],['m3',7,'M3 × 6']],
+  text:`<p>Place the motherboard on the 7 standoffs (ATX pattern) and screw it to the inserts with M3 screws. Micro-ATX and mini-ITX boards use some of the same holes.</p><p>Finally route the cables: 24-pin and CPU power from the PSU below, SATA on the right side of the drives.</p>`,
+  hw:["7× M3 × 6 mm"]},
+ {title:'LEDs and feet', cam:{t:[165,117,70],az:-24,el:8,d:960},
   items:[{o:()=>{const g=new THREE.Group(); for(const z of [121.5,133.5]){g.add(cyl([180,2,z],[0,-1,0],1.5,4,COL.led,12)); const s=new THREE.Mesh(new THREE.SphereGeometry(1.5,12,8),mat(COL.led)); s.position.set(180,-2,z); g.add(s);} return g;},f:[0,-70,0]},
          {o:()=>{const g=new THREE.Group(); for(const x of [10,180.5,218.5,319.5]) for(const y of [25,210]) g.add(cyl([x,y,0],[0,0,-1],7,5,COL.rubber,20)); return g;},f:[0,0,-70]}],
-  parts:[['led',2,'LED 3 mm'],['foot',8,'nóżka gumowa']],
-  text:`<p>Opcjonalnie wciśnij 2 diody LED 3 mm (power i HDD) w otwory z przodu ściany środkowej. Za nimi jest miejsce na przewody.</p><p>Przyklej gumowe nóżki pod ściany i gotowe.</p>`,
-  hw:['2× LED 3 mm (opcjonalnie)','8× nóżka gumowa']},
+  parts:[['led',2,'LED 3 mm'],['foot',8,'rubber foot']],
+  text:`<p>Optionally press two 3 mm LEDs (power and HDD) into the holes at the front of the middle wall. There is room for the wires behind them.</p><p>Stick rubber feet under the walls and you are done.</p>`,
+  hw:["2× 3 mm LED (optional)", "8× rubber foot"]},
 ];
 
 // build objects
@@ -480,13 +480,13 @@ function show(n){
   camTween={fromP:camera.position.clone(),fromT:controls.target.clone(),toP:c.pos,toT:c.tgt,t:performance.now()};
   if(reduce){camera.position.copy(c.pos); controls.target.copy(c.tgt); camTween=null;}
   controls.autoRotate=!!st.auto && !reduce; controls.autoRotateSpeed=1.2;
-  $('bignum').innerHTML = cur===0 ? '' : `${cur}<small>z ${steps.length-1}</small>`;
+  $('bignum').innerHTML = cur===0 ? '' : `${cur}<small>of ${steps.length-1}</small>`;
   $('title').textContent=st.title;
   $('text').innerHTML=st.text;
   $('callout').hidden=!st.parts.length;
   $('parts').innerHTML=st.parts.map(([k,q,l])=>`<figure><img alt="" src="${thumbs[k]||''}"><figcaption><b>${q}×</b>${l}</figcaption></figure>`).join('');
-  $('hw').innerHTML=st.hw.length?`<h3>Wkładki i śruby</h3><ul>${st.hw.map(h=>`<li>${h}</li>`).join('')}</ul>`:'';
-  $('prev').disabled=cur===0; $('next').textContent=cur===steps.length-1?'Na początek ↺':(cur===0?'Zacznij →':'Dalej →');
+  $('hw').innerHTML=st.hw.length?`<h3>Inserts &amp; screws</h3><ul>${st.hw.map(h=>`<li>${h}</li>`).join('')}</ul>`:'';
+  $('prev').disabled=cur===0; $('next').textContent=cur===steps.length-1?'Start over ↺':(cur===0?'Start →':'Next →');
   [...$('dots').children].forEach((b,i)=>{ if(i===cur) b.setAttribute('aria-current','step'); else b.removeAttribute('aria-current'); });
 }
 function animate(now){
@@ -536,13 +536,13 @@ function buildPrint(){
     pr.render(scene,pc); return pr.domElement.toDataURL('image/jpeg',.9);
   };
   const box=document.getElementById('print'); const n=steps.length-1;
-  let html=`<section class="pg cover"><p class="eyebrow">Instrukcja montażu</p><h1>Open NAS <span>ATX</span></h1><img alt="Gotowa obudowa" src="${shot(0)}">${steps[0].text}<p class="src">Projekt: Oskari Nykänen · <a href="https://www.printables.com/model/1437256-open-nas-case-for-atx">printables.com/model/1437256</a> · licencja CC BY-NC-SA 4.0<br>Wersja online 3D: <a href="https://shhatrat.github.io/openNAS-case-for-ATX-instruction/">shhatrat.github.io/openNAS-case-for-ATX-instruction</a></p></section>`;
+  let html=`<section class="pg cover"><p class="eyebrow">Assembly guide</p><h1>Open NAS <span>ATX</span></h1><img alt="Finished case" src="${shot(0)}">${steps[0].text}<p class="src">Design: Oskari Nykänen · <a href="https://www.printables.com/model/1437256-open-nas-case-for-atx">printables.com/model/1437256</a> · license CC BY-NC-SA 4.0<br>Online 3D version: <a href="https://shhatrat.github.io/openNAS-case-for-ATX-instruction/">shhatrat.github.io/openNAS-case-for-ATX-instruction</a></p></section>`;
   html+=`<section class="pg bomp">${document.querySelector('#bom .wrap').innerHTML}</section>`;
   for(let i=1;i<=n;i++){ const st=steps[i];
-    html+=`<section class="pg step"><div class="head"><div class="num">${i}<small>z ${n}</small></div><h2>${st.title}</h2></div>
+    html+=`<section class="pg step"><div class="head"><div class="num">${i}<small>of ${n}</small></div><h2>${st.title}</h2></div>
       <img class="shot" alt="" src="${shot(i)}">
-      <div class="cols"><div class="callout"><h3>Potrzebne w tym kroku</h3><div class="grid">${st.parts.map(([k,q,l])=>`<figure><img alt="" src="${thumbs[k]}"><figcaption><b>${q}×</b>${l}</figcaption></figure>`).join('')}</div></div>
-      <div class="text">${st.text}${st.hw.length?`<div class="hw"><h3>Wkładki i śruby</h3><ul>${st.hw.map(h=>`<li>${h}</li>`).join('')}</ul></div>`:''}</div></div></section>`;
+      <div class="cols"><div class="callout"><h3>Needed in this step</h3><div class="grid">${st.parts.map(([k,q,l])=>`<figure><img alt="" src="${thumbs[k]}"><figcaption><b>${q}×</b>${l}</figcaption></figure>`).join('')}</div></div>
+      <div class="text">${st.text}${st.hw.length?`<div class="hw"><h3>Inserts &amp; screws</h3><ul>${st.hw.map(h=>`<li>${h}</li>`).join('')}</ul></div>`:''}</div></div></section>`;
   }
   box.innerHTML=html; box.hidden=false; document.querySelector('.app').hidden=true;
   pr.dispose(); document.body.setAttribute('data-ready','1');

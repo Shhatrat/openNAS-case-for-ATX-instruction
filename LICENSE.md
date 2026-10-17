@@ -3,7 +3,7 @@
 **Open NAS case for ATX**: projekt i pliki STL © Oskari Nykänen
 Źródło: https://www.printables.com/model/1437256-open-nas-case-for-atx
 
-Instrukcja montażu (`index.html`, `instrukcja.pdf`, `README.md`, `en/`, `README.en.md`) jest utworem zależnym na podstawie powyższego projektu.
+Instrukcja montażu (`index.html`, `instruction.pdf`, `README.md`, `pl/`, `README.pl.md`) jest utworem zależnym na podstawie powyższego projektu.
 
 Całość jest udostępniona na licencji
 **Creative Commons Uznanie autorstwa – Użycie niekomercyjne – Na tych samych warunkach 4.0 Międzynarodowe (CC BY-NC-SA 4.0)**:
