@@ -120,6 +120,7 @@ td code{white-space:nowrap}
     <a href="https://www.printables.com/model/1437256-open-nas-case-for-atx" target="_blank" rel="noopener">Projekt na Printables ↗</a>
     <a href="https://shhatrat.github.io/openNAS-case-for-ATX-instruction/instrukcja.pdf" target="_blank" rel="noopener">PDF ↗</a>
     <a href="https://github.com/Shhatrat/openNAS-case-for-ATX-instruction" target="_blank" rel="noopener">GitHub ↗</a>
+    <a href="https://shhatrat.github.io/openNAS-case-for-ATX-instruction/en/">English</a>
   </div>
   <div class="tabs" role="tablist">
     <button id="tab-steps" role="tab" aria-selected="true">Montaż</button>
@@ -550,10 +551,10 @@ function buildPrint(){
 applyTheme(); resize();
 makeThumbs();
 const c0=camFor(steps[0].cam); camera.position.copy(c0.pos); controls.target.copy(c0.tgt);
-const hm=/^#krok-(\d+)$/.exec(location.hash);
+const hm=/^#(?:krok|step)-(\d+)$/.exec(location.hash);
 show(hm?+hm[1]:0);
 $('loading').hidden=true;
-if(location.hash==='#druk') buildPrint(); else requestAnimationFrame(animate);
+if(location.hash==='#druk'||location.hash==='#print') buildPrint(); else requestAnimationFrame(animate);
 </script>
 
 </body>

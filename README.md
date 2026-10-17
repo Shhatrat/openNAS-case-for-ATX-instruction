@@ -1,5 +1,7 @@
 # openNAS case for ATX: instrukcja montażu
 
+🇬🇧 [English version](README.en.md) · [3D guide in English](https://shhatrat.github.io/openNAS-case-for-ATX-instruction/en/)
+
 Instrukcja montażu w stylu LEGO do drukowanej w 3D, otwartej obudowy NAS na płytę ATX.
 
 - **Interaktywna instrukcja 3D:** https://shhatrat.github.io/openNAS-case-for-ATX-instruction/
